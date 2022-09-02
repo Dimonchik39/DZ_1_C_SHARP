@@ -7,7 +7,11 @@ Console.WriteLine("Определить все четные числа от 1 д
 Console.Write("Введите число:  ");
 int num = Convert.ToInt32(Console.ReadLine());
 int count = 1;
-while (count < num)
+while (count <= num) 
 {
-    
+    if (num % 2 == 0)
+        {
+            Console.Write($"{count}, ");
+        }  
+    count++;  
 }
